@@ -76,18 +76,38 @@
 //}
 //console.log(compararParImpar(11));
 
-function menormaioridade(idade){
-    if (idade <= 5){
-    return "bebê";
-}else if (idade >=6 && idade<=13){
-    return "criança";
-}else if (idade >=14 && idade<=17){
-    return "adolescente";
-}else if (idade >=18 && idade<=60){
-    return "adulto";
-}else if (idade >=61 && idade<=80){
-    return "idoso";
-}else if (idade <= 81){
-    return "ancião";
+//function menoremaioridade(idade){
+    //if (idade <= 5){
+  //  return "essa pessoa é um bebê";
+//}else if (idade >=6 && idade <=13){
+  //  return "essa pessoa é uma criança";
+//}else if (idade >=14 && idade <=17){
+  //  return "essa pessoa é adolescente";
+//}else if (idade >=18 && idade <=60){
+  //  return "essa pessoa é um adulto";
+//}else if (idade >=61 && idade <=80){
+  //  return "essa pessoa é um idoso";
+//}else {
+  //  return "essa pessoa é um ancião";
+//}
+//}
+//console.log(menoremaioridade(15));
+
+
+function imposto(salario){
+  if (salario >=0.00 && salario <=1100.00){
+   return aliquota = 0.05;
+  }else if (salario >=1100.01 && salario <=2500.00){
+    return aliquota = 0.1;
+  }else if (salario >=2500.00){
+    return aliquota = 0.15;
+  }
 }
-}
+const valorSalario = 2000;
+const valorBeneficio = 250;
+
+const valorImposto = imposto(valorSalario) * valorSalario
+console.log(valorImposto);
+
+const salarioFinal = valorSalario - valorImposto + valorBeneficio;
+console.log(salarioFinal);
